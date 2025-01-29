@@ -6,6 +6,8 @@ function App() {
 			<div>
 				<label htmlFor="usernameInput">Username:</label>
 				<input id="usernameInput" name="username" />
+				<input type='password' />
+				<input type='range' min={0} max={200} />
 			</div>
 			{/* 🐨 add appropriate inputs for:
 				- password

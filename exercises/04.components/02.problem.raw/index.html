@@ -10,17 +10,20 @@
 
 			// NOTE: this is NOT being used as a component. We're not quite there yet.
 			function message({ children }) {
+				
 				return <div className="message">{children}</div>
 			}
 
 			const element = (
 				<div className="container">
 					{/* 🐨 change these function calls to React.createElement API calls */}
-					{message({ children: 'Hello World' })}
-					{message({ children: 'Goodbye World' })}
-				</div>
+					{React.createElement(message, null, 'Hello World' )}
+					{React.createElement(message, null, 'Goodbye World')}
+					</div>
 			)
 
+			console.log(element);
+			
 			createRoot(rootElement).render(element)
 		</script>
 

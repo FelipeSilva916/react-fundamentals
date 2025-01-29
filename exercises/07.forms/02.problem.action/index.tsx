@@ -3,7 +3,9 @@ import { createRoot } from 'react-dom/client'
 function App() {
 	return (
 		// 🐨 add an action prop pointing to "api/onboarding"
-		<form>
+		<form
+			action="api/onboarding"
+		>
 			<div>
 				<label htmlFor="usernameInput">Username:</label>
 				<input id="usernameInput" name="username" />

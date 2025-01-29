@@ -2,9 +2,14 @@ import { createRoot } from 'react-dom/client'
 
 // 🦺 create an OperationFn type that represents the common shape of the
 // operation functions below
+
+type OperationFn = (left: number, right: number) => number
+
 // 🦺 create an Operator type that's set to the union of +, -, *, and /
 // 🦉 Note: you cannot use "keyof typeof operations" anymore because of a
 // circular dependency here
+
+type Operator = '+' | '-' | '*' | '/'
 
 // 🦺 cast the operations variable to a Record of the Operator type and the OperationFn type
 const operations = {
