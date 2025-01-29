@@ -3,11 +3,14 @@ import { createRoot } from 'react-dom/client'
 function App() {
 	return (
 		<form action="api/onboarding">
-			<div>
+			<div style={{ display: 'flex', flexDirection: 'column' }}>
 				<label htmlFor="usernameInput">Username:</label>
 				<input id="usernameInput" name="username" />
-				<input type='password' />
+				<input type='password' name='password' />
 				<input type='range' min={0} max={200} />
+				<input type='file' accept='image/*' />
+				<input type='color' />
+				<input type='date' />
 			</div>
 			{/* 🐨 add appropriate inputs for:
 				- password
