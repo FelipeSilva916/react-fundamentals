@@ -6,10 +6,15 @@ function App() {
 			<div style={{ display: 'flex', flexDirection: 'column' }}>
 				<label htmlFor="usernameInput">Username:</label>
 				<input id="usernameInput" name="username" />
+				<label htmlFor="passwordInput">Password:</label>
 				<input type='password' name='password' />
-				<input type='range' min={0} max={200} />
+				<label htmlFor="ageInput">Age:</label>
+				<input type='number' min={0} max={200} />
+				<label htmlFor="photoInput">Photo:</label>
 				<input type='file' accept='image/*' />
+				<label htmlFor="colorInput">Color:</label>
 				<input type='color' />
+				<label htmlFor="startDateInput">Start Date:</label>
 				<input type='date' />
 			</div>
 			{/* 🐨 add appropriate inputs for:

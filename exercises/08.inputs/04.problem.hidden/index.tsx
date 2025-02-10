@@ -58,6 +58,11 @@ function App() {
 				<label htmlFor="startDateInput">Start Date:</label>
 				<input id="startDateInput" name="startDate" type="date" />
 			</div>
+			<input
+				type='hidden'
+				name='orgId'
+				value='123'
+			/>
 			<button type="submit">Submit</button>
 		</form>
 	)

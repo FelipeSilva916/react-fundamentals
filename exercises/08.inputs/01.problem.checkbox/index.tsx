@@ -29,6 +29,10 @@ function App() {
 			{/* 🐨 add a checkbox named "waiver" with the label "Waiver Signed" */}
 			{/* 💰 put the <input> inside the <label> */}
 			<div>
+				<input id="waiverInput" name="waiver" type="checkbox" />
+				<label htmlFor="waiverInput">Waiver Signed</label>
+			</div>
+			<div>
 				<label htmlFor="startDateInput">Start Date:</label>
 				<input id="startDateInput" name="startDate" type="date" />
 			</div>
