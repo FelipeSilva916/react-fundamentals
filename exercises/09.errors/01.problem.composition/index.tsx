@@ -1,8 +1,10 @@
 import { createRoot } from 'react-dom/client'
 // 🐨 bring in ErrorBoundary and FallbackProps type from react-error-boundary
+import { ErrorBoundary, type FallbackProps } from 'react-error-boundary'
+
 
 // 🐨 Rename this to OnboardingForm
-function App() {
+function OnboardingForm() {
 	return (
 		<form
 			action="api/onboarding"
@@ -88,7 +90,7 @@ function App() {
 					type="date"
 					// 💰 you can comment this out to avoid the runtime error
 					defaultValue={new Date('today').toISOString().slice(0, 10)}
-					// defaultValue={new Date().toISOString().slice(0, 10)}
+				// defaultValue={new Date().toISOString().slice(0, 10)}
 				/>
 			</div>
 			<button type="submit">Submit</button>
